@@ -55,7 +55,7 @@ code, pre, body hr, #copyright .inner, #footer .inner, .gallery img, .gallery im
 #topbar {
 	background-color: #FFCC00;
 }
-#header { background-color: #eff1f1; }
+#header { background-color: #FFB401; }
 #header .menu > ul ul { background-color: #c8cfd0; }
 #border-header { background: #cad0d1; border-color: #eeeeee; }
 .sf-menu .current-menu-ancestor a span.triangle, .sf-menu .current-menu-item a span.triangle, .sf-menu li:hover a span.triangle, .sf-menu .current_page_item a span.triangle, .sf-menu .current_page_ancestor a span.triangle { border-bottom-color: #cad0d1; }

@@ -142,12 +142,12 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { color: #C86F06; }
 
 /* ===== HEADER ===== */
 #header {
-    position: relative;
-    margin-bottom:21px;
-    min-height: 105px;
-    /*height: 105px;*/
+	position: relative;
+	margin-bottom:21px;
+	min-height: 105px;
+	/*height: 105px;*/
     padding-top: 10px;
-    padding-bottom:14px;
+	padding-bottom:14px;
 }
 
 #border-header {
