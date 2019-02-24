@@ -103,7 +103,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { color: #A05F02; }
 #topbar a:hover {
 	color: #FFFFFF;
 }
-#header div.menu > ul > li > a { font-size: 14px; font-family: 'Maven Pro', sans-serif; color: #727272; font-style: normal; font-weight: 400; }
+#header div.menu > ul > li > a { font-size: 16px; font-family: 'Maven Pro', sans-serif; color: #FFFFFF; font-style: normal; font-weight: 600; }
 #header div.menu > ul > li > a:hover { color: #8d5504; }
 #header div.menu > ul > li.current-menu-item > a, #header div.menu > ul > li.current-menu-ancestor > a, #header div.menu > ul > li.current_page_parent > a, #header div.menu > ul > li.current_page_ancestor > a, #header div.menu > ul > li.current_page_item > a { color: #8d5504; }
 #header div.menu > ul ul li a { font-size: 13px; font-family: 'Maven Pro', sans-serif; color: #373636; font-style: normal; font-weight: 400; }
