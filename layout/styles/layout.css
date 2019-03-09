@@ -293,7 +293,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#F4A330;}
 /* Rows */
 .row1{color:#000000; background-color:#FF9900; border-color:#C46219;}
 .row2, .row2 a{}
-.row3{color:#474747; background-color:#FF9933;}
+.row3{color:#000000; background-color:#FF9933;}
 .row4{color:#A8A7A6;}
 .row5, .row5 a{color:#A8A7A6; background-color:#191919;}
 
@@ -438,4 +438,7 @@ table a, #comments a{background-color:inherit;}
 	.font-x3{font-size:1.6rem;}
 
 	#header #quickinfo li{display:block; margin-right:0;}
+}
+#top p {
+	vertical-align: top;
 }
