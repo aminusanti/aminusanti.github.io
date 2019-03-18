@@ -1,13 +1,69 @@
 <!DOCTYPE html>
-
-<html lang="">
+<html lang="en">
 <head>
-<title>Colenco</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+ <link rel="stylesheet" href="swiper.min.css">
+
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><style type="text/css">
-<!--
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <!-- Link Swiper's CSS -->
+ 
+
+  <!-- Demo styles -->
+  <style type="text/css">
+  
+    .swiper-container {
+      width: 100%;
+      padding-top: 200px;
+      padding-bottom: 50px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 380px;
+	  background: #fff;
+    }
+	.swipe-slide .imgBx
+	{
+	width: 100%
+	height: 300px;
+	overflow: hidden;
+	}
+	
+	.swipe-slide .imgBx img
+	{
+	width: 100%;
+		
+	}
+	
+	.swipe-slide .details
+	{
+	box-sizing; border-box;
+	font-size: 20px;
+	padding: 20px;
+		
+	}
+
+.swipe-slide .details h3
+	{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	text-align: center;
+	line-height: 20px;	
+	}
+	
+	.swipe-slide .details h3 span
+	{
+	font-size:16px;
+	color: #f44336;
+		
+	}
+	
 body {
 	background-image: url();
 	background-color: #333333;
@@ -39,8 +95,9 @@ body {
 }
 .style8 {font-family: Verdana, Arial, Helvetica, sans-serif; color: #999999; }
 .style16 {font-size: 24px}
--->
-</style></head>
+	
+  </style>
+</head>
 <body id="top">
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
@@ -115,6 +172,7 @@ body {
     <!-- ################################################################################################ -->
   </nav>
 </div>
+
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
@@ -131,64 +189,90 @@ body {
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper row3">
-  <section class="hoc container clear">
-    <div class="content">
-      <!-- ################################################################################################ -->
-      <div id="gallery">
-        <figure>
-          <ul class="nospace clear">
-            <li class="one_quarter first"><a href="#"><img src="images/demo/gallery/01.png" alt="p12"></a></li>
-            <li class="one_quarter"><a href="#"><img src="images/demo/gallery/01.png" alt="p11"></a></li>
-            <li class="one_quarter"><a href="#"><img src="images/demo/gallery/01.png" alt="p10"></a></li>
-            <li class="one_quarter"><a href="#"><img src="images/demo/gallery/01.png" alt="p9"></a></li>
-            <li class="one_quarter first"><a href="#"><img src="images/demo/gallery/01.png" alt="p8"></a></li>
-            <li class="one_quarter"><a href="#"><img src="images/demo/gallery/01.png" alt="p7"></a></li>
-            <li class="one_quarter"><a href="#"><img src="images/demo/gallery/01.png" alt="p6"></a></li>
-            <li class="one_quarter"><a href="#"><img src="images/demo/gallery/01.png" alt="p5"></a></li>
-            <li class="one_quarter first"><a href="#"><img src="images/demo/gallery/01.png" alt="p4"></a></li>
-            <li class="one_quarter"><a href="#"><img src="images/demo/gallery/01.png" alt="p3"></a></li>
-            <li class="one_quarter"><a href="#"><img src="images/demo/gallery/01.png" alt="p2"></a></li>
-            <li class="one_quarter"><a href="#"><img src="images/demo/gallery/01.png" alt="p1"></a></li>
-          </ul>
-          <figcaption>Gallery Description Goes Here</figcaption>
-        </figure>
-      </div>
-      <!-- ################################################################################################ -->
-      <!-- ################################################################################################ -->
-      <nav class="pagination">
-        <ul>
-          <li><a href="#">&laquo; Previous</a></li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><strong>&hellip;</strong></li>
-          <li><a href="#">6</a></li>
-          <li class="current"><strong>7</strong></li>
-          <li><a href="#">8</a></li>
-          <li><a href="#">9</a></li>
-          <li><strong>&hellip;</strong></li>
-          <li><a href="#">14</a></li>
-          <li><a href="#">15</a></li>
-          <li><a href="#">Next &raquo;</a></li>
-        </ul>
-      </nav>
-      <!-- ################################################################################################ -->
+
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" >
+	  <div class="imgBx">
+	  <img src="images/P2.png">
+	  </div>
+      <div class="details">
+	  <h3 align="center"><a href="index.html">Aminu Bunza<br>
+	      <span>Web Designer</span></a><span></span></h3>
+	 </div>
+	  </div>
+	  
+	  <div class="swiper-slide" >
+	  <div class="imgBx">
+	  <img src="images/NNPC-Logo.jpg">
+	  </div>
+      <div class="details">
+	  <h3>Aminu Bunza<br><span>Web Designer</span></h3>
+	 </div>
+	  </div>
+	  <div class="swiper-slide" >
+	  <div class="imgBx">
+	  <img src="images/NNPC-Logo.jpg">
+	  </div>
+      <div class="details">
+	  <h3>Aminu Bunza<br><span>Web Designer</span></h3>
+	 </div>
+	  </div>
+	  <div class="swiper-slide" >
+	  <div class="imgBx">
+	  <img src="images/NNPC-Logo.jpg">
+	  </div>
+      <div class="details">
+	  <h3>Aminu Bunza<br><span>Web Designer</span></h3>
+	 </div>
+	  </div>
+	  <div class="swiper-slide" >
+	  <div class="imgBx">
+	  <img src="images/NNPC-Logo.jpg">
+	  </div>
+      <div class="details">
+	  <h3>Aminu Bunza<br><span>Web Designer</span></h3>
+	 </div>
+	  </div>
+	  <div class="swiper-slide" >
+	  <div class="imgBx">
+	  <img src="images/NNPC-Logo.jpg">
+	  </div>
+      <div class="details">
+	  <h3>Aminu Bunza<br><span>Web Designer</span></h3>
+	 </div>
+	  </div>
+	  <div class="swiper-slide" >
+	  <div class="imgBx">
+	  <img src="images/NNPC-Logo.jpg">
+	  </div>
+      <div class="details">
+	  <h3>Aminu Bunza<br><span>Web Designer</span></h3>
+	 </div>
+	  </div>
+	  <div class="swiper-slide" >
+	  <div class="imgBx">
+	  <img src="images/NNPC-Logo.jpg">
+	  </div>
+      <div class="details">
+	  <h3>Aminu Bunza<br><span>Web Designer</span></h3>
+	 </div>
+	  </div>
+	  
+	  
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
     </div>
-    <p class="heading">&nbsp;</p>
-  </section>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
+    <p>
+      <!-- Add Pagination -->
+    </p>
+    <p>&nbsp;</p>
+    <p>&nbsp; </p>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
 <div class="wrapper row4 bgded overlay" style="">
   <footer id="footer" class="hoc clear">
     <!-- ################################################################################################ -->
@@ -257,5 +341,31 @@ body {
 <script src="layout/scripts/jquery.backtotop.js"></script>
 <script src="layout/scripts/jquery.mobilemenu.js"></script>
 <script src="layout/scripts/jquery.flexslider-min.js"></script>
+
+
+
+
+  <!-- Swiper JS -->
+  <script type="text/javascript" src="swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
 </body>
 </html>
