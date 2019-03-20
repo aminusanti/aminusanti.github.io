@@ -86,7 +86,7 @@ File: Layout CSS
 .testimonials article .heading{margin:0;}
 .testimonials article em{display:block; margin-top:-5px; font-size:.8rem; font-style:normal;}
 
-.team figure{display:block; position:relative; max-width:160px;}
+.team figure{display:block; position:relative; max-width:170px;}
 .team > figure:last-child{margin-bottom:0;}/* Used when elements stack in small viewports */
 .team > figure > a{display:inline-block; position:relative; max-width:100%; margin-bottom:30px;}
 .team > figure > a::before, .team > figure > a::after{display:block; position:absolute; content:""; text-align:center; opacity:0;}
