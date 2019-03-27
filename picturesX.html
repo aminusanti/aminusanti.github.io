@@ -102,20 +102,108 @@ body {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 .style8 {font-family: Verdana, Arial, Helvetica, sans-serif; color: #999999; }
-  .style17 {
-	font-size: 24px;
-	font-weight: bold;
+.style17 {
+	color: #FF0000;
+	font-size: 18px;
 }
-  .style18 {font-size: 24px}
-  .style19 {font-family: Georgia, "Times New Roman", Times, serif}
-  .style25 {font-size: 18px; color: #000000; font-family: Georgia, "Times New Roman", Times, serif; }
-  .style26 {font-size: 20px; color: #000000; font-family: Georgia, "Times New Roman", Times, serif; }
-  .style27 {
-	font-family: Geneva, Arial, Helvetica, sans-serif;
-	font-size: 20px;
+  .style18 {font-size: 16px}
+  .style16 {font-size: 24px}
+ 
+ 
+ @import url(https://fonts.googleapis.com/css?family=Anaheim);
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+	box-sizing: border-box;
 }
-  .style28 {font-size: 20px; color: #000000; font-family: Geneva, Arial, Helvetica, sans-serif; }
-  .style31 {font-family: Geneva, Arial, Helvetica, sans-serif}
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+html,
+body{
+	min-height: 100%;
+}
+body{
+	background-image: radial-gradient(mintcream 0%, lightgray 100%);
+}
+h1{
+	display: table;
+	margin: 5% auto 0;
+	text-transform: uppercase;
+	font-family: 'Anaheim', sans-serif;
+	font-size: 4em;
+	font-weight: 400;
+	text-shadow: 0 1px white, 0 2px black;
+}
+.container{
+	margin: 4% auto;
+	width: 210px;
+	height: 140px;
+	position: relative;
+	perspective: 1000px;
+}
+#carousel{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	animation: rotation 20s infinite linear;
+}
+#carousel:hover{
+	animation-play-state: paused;
+}
+#carousel figure{
+	display: block;
+	position: absolute;
+	width: 186px;
+	height: 116px;
+	left: 10px;
+	top: 10px;
+	background: black;
+	overflow: hidden;
+	border: solid 5px black;
+}
+#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+#carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
+#carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
+#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
+#carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
+#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
+#carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
+#carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
+#carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
+
+img{
+	
+	cursor: pointer;
+	transition: all .5s ease;
+}
+img:hover{
+	-webkit-filter: grayscale(0);
+  transform: scale(1.2,1.2);
+}
+
+@keyframes rotation{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+	}
+}
+ 
+ 
+ 
+  .container1 {	margin: 4% auto;
+	width: 210px;
+	height: 140px;
+	position: relative;
+	perspective: 1000px;
+}
   </style>
 </head>
 <body id="top">
@@ -156,9 +244,9 @@ body {
         <ul>
           
 		  <li><a href="#" class="drop"><strong>ENERGY</strong></a>
-            <ul>
-              <li><a href="transmission&d.html"><strong>TRANSMISSION & DISTRIBUTION</strong></a></li>
-             <li><a href="thermal.html"><strong>THERMAL</strong></a></li>
+             <ul>
+                 <li><a href="transmission&d.html"><strong>TRANSMISSION & DISTRIBUTION</strong></a></li>
+              <li><a href="thermal.html"><strong>THERMAL</strong></a></li>
 			  <li><a href="hydro.html"><strong>HYDRO</strong></a></li>
               <li><a href="renewables.html"><strong>RENEWABLES</strong></a></li>
 			  <li><a href="#"><strong>OIL & GAS</strong></a></li>
@@ -193,13 +281,11 @@ body {
 <p>
   <!-- ################################################################################################ -->
 </p>
-<div class="wrapper bgded overlay" style="background-image:url(images/coe.png);">
+<div class="wrapper bgded overlay" style="background-image:url(images/demo/build-cost-bg.png);">
   <section id="breadcrumb" class="hoc clear">
-    <p class="style17 style19">CODE OF ETHICS </p>
-    <p>
+    <p><span class="heading style2 style1 style16">PICTURE GALLERY </span>
       <!-- ################################################################################################ -->
     </p>
-    <p>&nbsp;</p>
   </section>
 </div>
 <p>
@@ -211,46 +297,67 @@ body {
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
   <!-- ################################################################################################ --></p>
-<div class="wrapper row3">
-  <section class="hoc container clear"><p align="left" class="style25 style27">Colenco  Consulting has technical responsibility, but also commitment towards  sustainable development, which is based on economic, social and environmental  responsibility. In this respect our staff is committed to fully enforce the  following code of ethics, applicable across all countries and areas of  operations:</p>
-    <h1 align="left" class="style17"><a name="_Toc3738478">Legal compliance</a> </h1>
-    <p align="left" class="style28">We comply with all  applicable laws and regulations in the countries wherever we operate.</p>
-    <h1 align="left"><span class="style17"><a name="_Toc3738479">Fraud, bribery and corruption</a> </span></h1>
-    <p align="left" class="style28">Any form of bribe is  strictly prohibited. As an employee or entrusted business partner, you are  expected to act in accordance with our policies and guidelines when it comes to  accepting or offering any form of gift or hospitality. Involvement in extortion,  fraudulent practices, bribery or corruption will lead to disciplinary action  and may lead to the termination of employment or contract, as well as criminal  charges.</p>
-    <h1 align="left"><span class="style18"><a name="_Toc3738480"><strong>Safe and Healthy working environment</strong></a><strong> </strong></span></h1>
-    <p align="left" class="style28">We are committed to provide  a safe and healthy working environment and comply with all local applicable  safety and health standard and regulations.</p>
-    <h1 align="left" class="style18"><a name="_Toc3738481"><strong>Environmental Responsibility</strong></a> </h1>
-    <p align="left" class="style28">We have the responsibility  to consider the environmental consequences in decision making and take  preventative actions to mitigate the environmental impact.</p>
-    <h1 align="left"><span class="style18"><a name="_Toc3738482"><strong>Providing Equal Opportunity</strong></a><strong> </strong></span></h1>
-    <p align="left" class="style28">The company will not  discriminate against any individual based on race, colour, sex, national  origin, age, religion, marital status, sexual orientation, disability or any  factors prohibited by applicable laws. We have zero tolerance towards  discrimination, harassment and other human rights violations.</p>
-    <h1 align="left"><span class="style18"><a name="_Toc3738483"><strong>Avoiding Conflicts of Interest</strong></a><strong> </strong></span></h1>
-    <p align="left" class="style28">The employees have the  right to engage in business, financial and other activities outside their work  at the company. In case of possible conflicts of interest with their  professional activities, these activities need to be approved prior by the  management. You must never let conﬂicting interests inﬂuence your behaviour  at the expense of a party that has put legitimate trust in you and the company.</p>
-    <h1 align="left"><span class="style18"><a name="_Toc3738484"><strong>Communication and Employee Training</strong></a><strong> </strong></span></h1>
-    <p align="left" class="style26"><span class="style31">The company makes its  standards and policies publicly available.It is the duty of the employee hiring  an employee or a supplier, consultant, sub-consultant, agent, intermediary or  other similar person or entity, or entering into a consortium or joint venture  arrangement, to duly inform such person or entity of the Code and its  implications</span>.</p>
-    <h1 align="left"><span class="style18"><a name="_Toc3738485"><strong>Information Security</strong></a><strong> </strong></span></h1>
-    <p align="left" class="style28">The employees will not disclose any  confidential data which is related to the company’s human resource, marketing,  financial and strategic plans in any form.</p>
-    <h1 align="justify" class="style18"><a name="_Toc3738486"><strong>Insider Trading</strong></a> </h1>
-    <p align="left" class="style28">Employees may receive  information about other companies during their course of their work, which is  not public. The use or disclosure of non-public information by employees for  their own financial benefit or that of their relations is against the company  policy and a breach of the law.</p>
-    <h1 align="justify" class="style18"><a name="_Toc3738487"><strong>Breaches of Code of Ethics</strong></a> </h1>
-    <p align="left" class="style28">All regulations of this  Code of Ethics are binding for all employees, regardless of their hierarchy.  Breaches of the Code of Ethics are fundamental violations of the company and  have consequences. Breach or possible breach of the Code of Ethics must be  reported to the Managing Director of the company. All reports are treated  confidentially.</p>
-    <h2 class="overlay">Code of ethics to download</h2>
-    <p><a href="Docs/CODE OF ETHICS.pdf"><img src="images/pdf.jpg" width="76" height="106" border="0"></a></p>
-    <p align="justify">&nbsp;</p>
+
+    <div>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <div class="container1">
+        <div id="carousel">
+          <figure><img src="images/af.jpg" alt="kjkj"></figure>
+          <figure><img src="http://lorempixel.com/186/116/nature/2" alt="ghyg"></figure>
+          <figure><img src="http://lorempixel.com/186/116/nature/3" alt="k"></figure>
+          <figure><img src="http://lorempixel.com/186/116/nature/4" alt="kk"></figure>
+          <figure><img src="http://lorempixel.com/186/116/nature/5" alt="hhngn"></figure>
+          <figure><img src="http://lorempixel.com/186/116/nature/6" alt="hghv"></figure>
+          <figure><img src="http://lorempixel.com/186/116/nature/7" alt="rgdg"></figure>
+          <figure><img src="images/NNPC-Logo.jpg" alt="rtyu"></figure>
+          <figure><img src="images/logo colenco.png" alt="rthy"></figure>
+        </div>
+      </div>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+</div>
   </section>
 </div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
+<p>&nbsp;</p>
+<p>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+</p>
 <div class="wrapper row4 bgded overlay" style="">
   <footer id="footer" class="hoc clear">
     <!-- ################################################################################################ -->
     <div class="one_quarter first">
       <h6 align="justify" class="heading"><strong>CONTACT</strong></h6>
       <p align="justify">ADDRESS: NO 8 AGUATA CLOSE, GARKI 2, FCT ABUJA  </p>
+      <p align="justify">PHONE NUMBER: 01234567890 </p>
       <p align="justify">PHONE NUMBER: +2348039437969</p>
       <p align="justify">EMAIL:info@colencoconsulting.com</p>
     </div>
@@ -259,14 +366,12 @@ body {
       <div align="left">
         <ul class="faico clear">
           <li><a href="#"><i class="fa fa-lg fa-home"></i></a></li>
-          <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-          <br>
           <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
           <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-          <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+          
+          <br>
+         
         </ul>
-      </div>
     </div>
     <div class="one_quarter">
       <h6 align="justify" class="heading"><strong>CORPORATION</strong></h6>

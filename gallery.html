@@ -8,64 +8,123 @@ Licence URI: http://www.os-templates.com/template-terms
 -->
 <html lang="">
 <head>
-<title>Colenco</title>
+<title>Carinary</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 <style type="text/css">
 <!--
-
-
-
-
-
-
-
-
-
-.style1 {
-	font-size: 18px;
-	font-weight: bold;
-}
+.style1 {font-size: 18px}
 .style14 {color: #B5A792;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 .style8 {font-family: Verdana, Arial, Helvetica, sans-serif; color: #999999; }
 .style2 {font-weight: bold}
-.style16 {font-size: 16px}
-.style17 {
-	font-size: 24px;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-weight: bold;
-	color: #FFFFFF;
-}
 -->
 
 
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
 
+body {
+	margin: 0;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	color: #707070;
+	background-color: #333;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 700px;
+	max-height: 100vh;
+	background-color: white;
+}
+
+
+/* Useful Classes */
+.xy-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.transition {
+	transition: all 350ms ease-in-out;
+}
+
+.r-3-2 {
+	width: 100%;
+	padding-bottom: 66.667%;
+	background-color: #ddd;
+}
+
+.image-holder {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/* Main Styles */
+.gallery-wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.gallery {
+	position: relative;
+	white-space: nowrap;
+	font-size: 0;
+}
+
+.item-wrapper {
+	cursor: pointer;
+	width: 23%; /* arbitrary value */
+	display: inline-block;
+	background-color: white;
+}
+
+.gallery-item { opacity: 0.5; }
+.gallery-item.active { opacity: 1; }
+
+.controls {
+	font-size: 0;
+	border-top: none;
+}
+.move-btn {
+	display: inline-block;
+	width: 50%;
+	border: none;
+  color: #ccc;
+	background-color: transparent;
+	padding: 0.2em 1.5em;
+}
+.move-btn:first-child {border-right: none;}
+.move-btn.left  { cursor: w-resize; }
+.move-btn.right { cursor: e-resize; }
+
+.container1 {	margin: 0 auto;
+	max-width: 700px;
+	max-height: 100vh;
+	background-color: white;
+}
+.gallery-item1 {opacity: 0.5; }
+.image-holder1 {	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.transition1 {	transition: all 350ms ease-in-out;
+}
+.style15 {color: #FF0000}
+.style16 {font-weight: bold}
+.style17 {font-weight: bold}
 </style>
-
-<!-- RESET STYLESHEET -->
-    
-    
-    <!-- MAIN THEME STYLESHEET -->
-    <link rel="stylesheet" type="text/css" media="all" href="style.css" />
-
-   
-    
-    <link rel='stylesheet' id='responsive-css'  href='css/responsive.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='colorbox-css'  href='css/colorbox.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='tipsy-css'  href='css/tipsy.css' type='text/css' media='all' />
-
-    <link rel='stylesheet' id='fonts-css'  href='css/font-awesome.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='shortcode-css'  href='css/shortcodes.css' type='text/css' media='all' />
-
-
-   
-
-    <script type='text/javascript' src='js/jquery/jquery.js'></script>
-    
-
 </head>
 <body id="top">
 <!-- ################################################################################################ -->
@@ -88,12 +147,12 @@ Licence URI: http://www.os-templates.com/template-terms
   <nav id="mainav" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <ul class="clear">
-       <li class="drop style2"><a href="#" class="style1">Home</a>
+      <li class="drop style2"><a href="#" class="style1"><strong>Home</strong></a>
 	  <ul>
          <li><a href="index.html" class="style11"><strong>HOME</strong></a></li>
-		 
+
 		  <li><a href="about us.html" class="style11">ABOUT US</a></li>
-		  
+		 
           <li><a href="missionvission.html" class="style11">VISION & MISSION</a></li>
           <li><a href="globalpresence.html" class="style11">GLOBAL PRESENCE</a></li>
           <li><a href="history.html" class="style11">HISTORY</a></li>
@@ -101,40 +160,40 @@ Licence URI: http://www.os-templates.com/template-terms
 		  <li><a href="coe.html" class="style11">CODE OF ETHICS</a></li>
         </ul>
 	  </li>
-       <li><a href="#" class="drop style2 style1">SECTORS</a>
+       <li><a href="#" class="drop style2 style5 style1">SECTORS</a>
         <ul>
           
 		  <li><a href="#" class="drop"><strong>ENERGY</strong></a>
-             <ul>
+            <ul>
                  <li><a href="transmission&d.html"><strong>TRANSMISSION & DISTRIBUTION</strong></a></li>
-              <li><a href="#"><strong>THERMAL</strong></a></li>
-			  <li><a href="#"><strong>HYDRO</strong></a></li>
-              <li><a href="#"><strong>RENEWABLES</strong></a></li>
+              <li><a href="thermal.html"><strong>THERMAL</strong></a></li>
+			  <li><a href="hydro.html"><strong>HYDRO</strong></a></li>
+              <li><a href="renewables.html"><strong>RENEWABLES</strong></a></li>
 			  <li><a href="#"><strong>OIL & GAS</strong></a></li>
             </ul>
           </li>
           <li><a href="#" class="style10"><strong>INFRASTRUCTURE</strong></a></li>
         </ul>
       </li>
-      <li><a href="#" class="drop style1"><strong>PROJECTS</strong></a>
+      <li><a href="#" class="drop style5 style1"><strong>PROJECTS</strong></a>
         <ul>
           <li><a href="completedp.html"><strong>COMPLETED</strong></a></li>
             <li><a href="ongoingp.html"><strong>ONGOING</strong></a></li>
         </ul>
       </li>
-     <li><a href="#" class="drop style1"><strong>GALLERY</strong></a>
+     <li><a href="#" class="drop style5 style1"><strong>GALLERY</strong></a>
         <ul>
           <li><a href="videos.html"><strong>VIDEOS</strong></a></li>
             <li><a href="pictures.html"><strong>PICTURES</strong></a></li>
         </ul>
       </li>
-      <li><a href="#" class="drop style1"><strong>QUALITY/HSE</strong></a>
+      <li><a href="#" class="drop style5 style1"><strong>QUALITY/HSE</strong></a>
         <ul>
           <li><a href="certifications.html"><strong>CERTIFICATIONS</strong></a></li>
         </ul>
       </li>
-      <li><a href="careers.html" class="style1">CAREERS</a></li>
-      <li><a href="contact.html" class="style1">CONTACT</a></li>
+      <li><a href="careers.html" class="style1 style4"><strong>CAREERS</strong></a></li>
+      <li><a href="contact.html" class="style1 style4"><strong>CONTACT</strong></a></li>
     </ul>
     <!-- ################################################################################################ -->
   </nav>
@@ -154,107 +213,78 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper row3">
-  <section class="hoc container clear"> 
+
     <!-- ################################################################################################ -->
-    <div id="content-page" class="span12 content group">
-      <div class="tabs-container"><ul class="tabs"><li><h4><a href="#tab1" title="Services">Services</a></h4></li>
-          <li><h4><a href="#tab2" title="Customers">Customers</a></h4></li>
-          <li><h4><a href="#tab3" title="Marketing">Marketing</a></h4></li>
-        </ul>
-        
-        <div class="border-box group">
-            <div id="tab1" class="panel group"><strong>TRANSMISSION &amp; DISTRIBUTION COMPLETED PROJECTS MANAGEMENT AND SUPERVISION</strong>
-              <p>
-              <div class="short-table white">
-    <table style="width: 100%" cellspacing="0" cellpadding="0">
-        <thead>
-        <tr>
-            <th class="align-left">Features</th>
-            <th>Free</th>
-            <th>Mini</th>
-            <th>Standard</th>
-            <th>Premium</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td class="align-left">Features 1</td>
-            <td>1</td>
-            <td>unlimited</td>
-            <td><i class="yit-sc-tick icon-ok" style="color: #23b10b; font-size: 18px;"></i></td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td class="align-left">Features 2</td>
-            <td>2</td>
-            <td>3</td>
-            <td><i class="yit-sc-tick icon-ok" style="color: #23b10b; font-size: 18px;"></i></td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td class="align-left">Features 3</td>
-            <td>10</td>
-            <td>3</td>
-            <td>2</td>
-            <td>1</td>
-        </tr>
-        </tbody>
-    </table>
-</div>
-                </p>
-   
+    <div class="container1">
+      <div class="feature">
+        <figure class="featured-item image-holder r-3-2 transition"></figure>
+      </div>
+      <div class="gallery-wrapper">
+        <div class="gallery">
+          <div class="item-wrapper">
+            <figure class="gallery-item image-holder r-3-2 active transition"></figure>
           </div>
-            <div id="tab2" class="panel group"></p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing lorem<br />
-                    ipsum dolor sit amet, consectetur adipiscing elit.<br />
-                    <strong>Donec blandit enim libero</strong>, quis tincidunt arcu.
-                </p>
-                <p>
-                    Eaque ipsa quae ab illo veritatis et quasi architecto beatae vitae dicta.
-                </p>
-                
-            </div>
-            
-            <div id="tab3" class="panel group"></p>
-
-                <ul class="short arrow">
-
-                    <li>item</li>
-                    <li>item</li>
-                    <li>item</li>
-
-                </ul>
-                <p>
-            </div>
+          <div class="item-wrapper">
+            <figure class="gallery-item image-holder r-3-2 transition"></figure>
+          </div>
+          <div class="item-wrapper">
+            <figure class="gallery-item image-holder r-3-2 transition"></figure>
+          </div>
+          <div class="item-wrapper">
+            <figure class="gallery-item image-holder r-3-2 transition"></figure>
+          </div>
+          <div class="item-wrapper">
+            <figure class="gallery-item image-holder r-3-2"></figure>
+          </div>
+          <div class="item-wrapper">
+            <figure class="gallery-item image-holder r-3-2 transition"></figure>
+          </div>
+          <div class="item-wrapper">
+            <figure class="gallery-item image-holder r-3-2 transition"></figure>
+          </div>
+          <div class="item-wrapper">
+            <figure class="gallery-item image-holder r-3-2 transition"></figure>
+          </div>
+          <div class="item-wrapper">
+            <figure class="gallery-item image-holder r-3-2 transition"></figure>
+          </div>
+          <div class="item-wrapper">
+            <figure class="gallery-item image-holder r-3-2 transition"></figure>
+          </div>
+           
+           <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
         </div>
+      <div class="controls">
+        <button class="move-btn left style15 style16">&larr;</button>
+        <button class="move-btn right style15 style17">&rarr;</button>
+      </div>
+     
     </div>
-    </p>
-        
-   
-
-    
-    <ul>
-    </ul>
-    <!-- ################################################################################################ -->
-<div class="clear"></div>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
   </section>
 </div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
+
+<p>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+</p>
 <div class="wrapper row4 bgded overlay" style="">
   <footer id="footer" class="hoc clear">
     <!-- ################################################################################################ -->
     <div class="one_quarter first">
       <h6 align="justify" class="heading"><strong>CONTACT</strong></h6>
-      <p align="justify">ADDRESS: NO 8 AGUATA CLOSE, GARKI 2, FCT ABUJA  </p>
-      <p align="justify">PHONE NUMBER: 01234567890 </p>
-      <p align="justify">EMAIL:colencoco@</p>
+      <p align="justify">ADDRESS: NO 8 AGUATA CLOSE, GARKI 2, FCT ABUJA </p>
+      <p align="justify">PHONE NUMBER: +2348039437969</p>
+      <p align="justify">EMAIL:info@colencoconsulting.com</p>
     </div>
     <div class="one_quarter">
       <h6 align="justify" class="heading"><strong>NAVIGATION</strong></h6>
@@ -319,17 +349,126 @@ Licence URI: http://www.os-templates.com/template-terms
 <script src="layout/scripts/jquery.mobilemenu.js"></script>
 <script src="layout/scripts/jquery.flexslider-min.js"></script>
 
-<script type='text/javascript' src='js/jquery.colorbox-min.js'></script>
-<script type='text/javascript' src='js/jquery.flexslider-min.js'></script>
-<script type='text/javascript' src='js/jquery.tweetable.js'></script>
-<script type='text/javascript' src='js/jquery.superfish.js'></script>
-<script type='text/javascript' src='js/jquery.tipsy.js'></script>
-<script type='text/javascript' src='js/responsive.js'></script>
-<script type='text/javascript' src='js/jquery.mobilemenu.js'></script>
-<script type='text/javascript' src='js/shortcodes.js'></script>
-<script type='text/javascript' src='js/jquery/jquery.masonry.min.js'></script>
-<script type='text/javascript' src='js/jquery.custom.js'></script>
+<script>
+var gallery = document.querySelector('.gallery');
+var galleryItems = document.querySelectorAll('.gallery-item');
+var numOfItems = gallery.children.length;
+var itemWidth = 23; // percent: as set in css
 
+var featured = document.querySelector('.featured-item');
+
+var leftBtn = document.querySelector('.move-btn.left');
+var rightBtn = document.querySelector('.move-btn.right');
+var leftInterval;
+var rightInterval;
+
+var scrollRate = 0.2;
+var left;
+
+function selectItem(e) {
+	if (e.target.classList.contains('active')) return;
+	
+	featured.style.backgroundImage = e.target.style.backgroundImage;
+	
+	for (var i = 0; i < galleryItems.length; i++) {
+		if (galleryItems[i].classList.contains('active'))
+			galleryItems[i].classList.remove('active');
+	}
+	
+	e.target.classList.add('active');
+}
+
+function galleryWrapLeft() {
+	var first = gallery.children[0];
+	gallery.removeChild(first);
+	gallery.style.left = -itemWidth + '%';
+	gallery.appendChild(first);
+	gallery.style.left = '0%';
+}
+
+function galleryWrapRight() {
+	var last = gallery.children[gallery.children.length - 1];
+	gallery.removeChild(last);
+	gallery.insertBefore(last, gallery.children[0]);
+	gallery.style.left = '-23%';
+}
+
+function moveLeft() {
+	left = left || 0;
+
+	leftInterval = setInterval(function() {
+		gallery.style.left = left + '%';
+
+		if (left > -itemWidth) {
+			left -= scrollRate;
+		} else {
+			left = 0;
+			galleryWrapLeft();
+		}
+	}, 1);
+}
+
+function moveRight() {
+	//Make sure there is element to the leftd
+	if (left > -itemWidth && left < 0) {
+		left = left  - itemWidth;
+		
+		var last = gallery.children[gallery.children.length - 1];
+		gallery.removeChild(last);
+		gallery.style.left = left + '%';
+		gallery.insertBefore(last, gallery.children[0]);	
+	}
+	
+	left = left || 0;
+
+	leftInterval = setInterval(function() {
+		gallery.style.left = left + '%';
+
+		if (left < 0) {
+			left += scrollRate;
+		} else {
+			left = -itemWidth;
+			galleryWrapRight();
+		}
+	}, 1);
+}
+
+function stopMovement() {
+	clearInterval(leftInterval);
+	clearInterval(rightInterval);
+}
+
+leftBtn.addEventListener('mouseenter', moveLeft);
+leftBtn.addEventListener('mouseleave', stopMovement);
+rightBtn.addEventListener('mouseenter', moveRight);
+rightBtn.addEventListener('mouseleave', stopMovement);
+
+
+//Start this baby up
+(function init() {
+	var images = [
+		'https://www07.abb.com/images/librariesprovider146/power-distribution/grid-integration.jpg?sfvrsn=1',
+		'https://www.tdworld.com/sites/tdworld.com/files/Distributed%20Bus%20Protection_770x440-1.jpg',
+		'https://www.securemeters.com/index.php/download_file/view_inline/1356/',
+		'https://ramboll.com/-/media/images/rgr/markets/energy/ghi/hydro-power-istock-1280x720.jpg?h=765&la=en&w=1360',
+		'https://commonwealthmagazine.org/wp-content/uploads/2016/05/bigstock-High-Voltage-Electricity-Trans-79132618-620x410.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/guy.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/landscape.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/lips.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/night.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/table.jpg'
+	];
+	
+	//Set Initial Featured Image
+	featured.style.backgroundImage = 'url(' + images[0] + ')';
+	
+	//Set Images for Gallery and Add Event Listeners
+	for (var i = 0; i < galleryItems.length; i++) {
+		galleryItems[i].style.backgroundImage = 'url(' + images[i] + ')';
+		galleryItems[i].addEventListener('click', selectItem);
+	}
+})();
+</script>
 
 </body>
 </html>

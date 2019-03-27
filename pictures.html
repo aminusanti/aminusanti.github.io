@@ -10,105 +10,127 @@ Licence URI: http://www.os-templates.com/template-terms
 <head>
 <title>Carinary</title>
 <meta charset="utf-8">
-<meta charset="utf-8">
-  <title>Colenco</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
- <link rel="stylesheet" href="swiper.min.css">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
-  <!-- Link Swiper's CSS -->
- 
-
-  <!-- Demo styles -->
-  <style type="text/css">
-  
-    .swiper-container {
-      width: 100%;
-      padding-top: 200px;
-      padding-bottom: 50px;
-    }
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 300px;
-      height: 380px;
-	  background: #fff;
-    }
-	.swipe-slide .imgBx
-	{
-	width: 100%
-	height: 300px;
-	overflow: hidden;
-	}
-	
-	.swipe-slide .imgBx img
-	{
-	width: 100%;
-		
-	}
-	
-	.swipe-slide .details
-	{
-	box-sizing; border-box;
-	font-size: 20px;
-	padding: 20px;
-		
-	}
-
-.swipe-slide .details h3
-	{
-	margin: 0;
-	padding: 0;
-	font-size: 20px;
-	text-align: center;
-	line-height: 20px;	
-	}
-	
-	.swipe-slide .details h3 span
-	{
-	font-size:16px;
-	color: #f44336;
-		
-	}
-	
-body {
-	background-image: url();
-	background-color: #333333;
-}
-.style2 {
-	font-size: 18px;
-	font-weight: bold;
-	color: #FFFFFF;
-}
-.style4 {font-size: 18px; font-weight: bold; }
-.style5 {font-size: 18px}
-.style10 {
-	font-size: 12px;
-	font-weight: bold;
-}
-.style11 {font-size: 12px}
-#Layer1 {
-	position:absolute;
-	left:254px;
-	top:17px;
-	width:217px;
-	height:20px;
-	z-index:2;
-}
-.style13 {color: #000000}
-.style14 {	color: #B5A792;
+<style type="text/css">
+<!--
+.style1 {font-size: 18px}
+.style14 {color: #B5A792;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 .style8 {font-family: Verdana, Arial, Helvetica, sans-serif; color: #999999; }
-.style17 {
-	color: #FF0000;
-	font-size: 18px;
+.style2 {font-weight: bold}
+-->
+
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
 }
-  .style18 {font-size: 16px}
-  .style16 {font-size: 24px}
-  </style>
+
+body {
+	margin: 0;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	color: #707070;
+	background-color: #333;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 700px;
+	max-height: 100vh;
+	background-color: white;
+}
+
+
+/* Useful Classes */
+.xy-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.transition {
+	transition: all 350ms ease-in-out;
+}
+
+.r-3-2 {
+	width: 100%;
+	padding-bottom: 66.667%;
+	background-color: #ddd;
+}
+
+.image-holder {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/* Main Styles */
+.gallery-wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.gallery {
+	position: relative;
+	white-space: nowrap;
+	font-size: 0;
+}
+
+.item-wrapper {
+	cursor: pointer;
+	width: 23%; /* arbitrary value */
+	display: inline-block;
+	background-color: white;
+}
+
+.gallery-item { opacity: 0.5; }
+.gallery-item.active { opacity: 1; }
+
+.controls {
+	font-size: 0;
+	border-top: none;
+}
+.move-btn {
+	display: inline-block;
+	width: 50%;
+	border: none;
+  color: #ccc;
+	background-color: transparent;
+	padding: 0.2em 1.5em;
+}
+.move-btn:first-child {border-right: none;}
+.move-btn.left  { cursor: w-resize; }
+.move-btn.right { cursor: e-resize; }
+
+.container1 {	margin: 0 auto;
+	max-width: 700px;
+	max-height: 100vh;
+	background-color: white;
+}
+.gallery-item1 {opacity: 0.5; }
+.image-holder1 {	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.transition1 {	transition: all 350ms ease-in-out;
+}
+.style15 {color: #FF0000}
+.style16 {font-weight: bold}
+.style17 {font-weight: bold}
+.style18 {
+	font-size: 18px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.style19 {font-family: Verdana, Arial, Helvetica, sans-serif}
+</style>
 </head>
 <body id="top">
 <!-- ################################################################################################ -->
@@ -131,186 +153,144 @@ body {
   <nav id="mainav" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <ul class="clear">
-      <li class="drop style2"><a href="#" class="style1"><strong>Home</strong></a>
+      <li class="drop style2"><a href="#" class="style18">Home</a>
 	  <ul>
-         <li><a href="index.html" class="style11"><strong>HOME</strong></a></li>
-		
-		  <li><a href="about us.html" class="style11">ABOUT US</a></li>
+         <li><a href="index.html" class="style11 style19"><strong>HOME</strong></a></li>
+
+		  <li><a href="about us.html" class="style11 style19">ABOUT US</a></li>
 		 
-          <li><a href="missionvission.html" class="style11">VISION & MISSION</a></li>
-          <li><a href="globalpresence.html" class="style11">GLOBAL PRESENCE</a></li>
-          <li><a href="history.html" class="style11">HISTORY</a></li>
-          <li><a href="clients.html" class="style11">OUR CLIENTS</a></li>
-		  <li><a href="coe.html" class="style11">CODE OF ETHICS</a></li>
+          <li><a href="missionvission.html" class="style11 style19">VISION & MISSION</a></li>
+          <li><a href="globalpresence.html" class="style11 style19">GLOBAL PRESENCE</a></li>
+          <li><a href="history.html" class="style11 style19">HISTORY</a></li>
+          <li><a href="clients.html" class="style11 style19">OUR CLIENTS</a></li>
+		  <li><a href="coe.html" class="style11 style19">CODE OF ETHICS</a></li>
         </ul>
 	  </li>
-     <li><a href="#" class="drop style2 style5 style1">SECTORS</a>
+       <li><a href="#" class="drop style2 style5 style1 style19">SECTORS</a>
         <ul>
           
-		  <li><a href="#" class="drop"><strong>ENERGY</strong></a>
-             <ul>
-                 <li><a href="transmission&d.html"><strong>TRANSMISSION & DISTRIBUTION</strong></a></li>
-              <li><a href="#"><strong>THERMAL</strong></a></li>
-			  <li><a href="#"><strong>HYDRO</strong></a></li>
-              <li><a href="#"><strong>RENEWABLES</strong></a></li>
-			  <li><a href="#"><strong>OIL & GAS</strong></a></li>
+		  <li><a href="#" class="drop style19"><strong>ENERGY</strong></a>
+            <ul>
+                 <li class="style19"><a href="transmission&d.html"><strong>TRANSMISSION & DISTRIBUTION</strong></a></li>
+              <li class="style19"><a href="thermal.html"><strong>THERMAL</strong></a></li>
+			  <li class="style19"><a href="hydro.html"><strong>HYDRO</strong></a></li>
+              <li class="style19"><a href="renewables.html"><strong>RENEWABLES</strong></a></li>
+			  <li class="style19"><a href="#"><strong>OIL & GAS</strong></a></li>
             </ul>
           </li>
-          <li><a href="#" class="style10"><strong>INFRASTRUCTURE</strong></a></li>
+          <li><a href="#" class="style10 style19"><strong>INFRASTRUCTURE</strong></a></li>
         </ul>
       </li>
-      <li><a href="#" class="drop style5 style1"><strong>PROJECTS</strong></a>
+      <li><a href="#" class="drop style5 style1 style19"><strong>PROJECTS</strong></a>
         <ul>
-          <li><a href="completedp.html"><strong>COMPLETED</strong></a></li>
-            <li><a href="ongoingp.html"><strong>ONGOING</strong></a></li>
+          <li class="style19"><a href="completedp.html"><strong>COMPLETED</strong></a></li>
+            <li class="style19"><a href="ongoingp.html"><strong>ONGOING</strong></a></li>
         </ul>
       </li>
-     <li><a href="#" class="drop style5 style1"><strong>GALLERY</strong></a>
+     <li><a href="#" class="drop style5 style1 style19"><strong>GALLERY</strong></a>
         <ul>
-          <li><a href="videos.html"><strong>VIDEOS</strong></a></li>
-            <li><a href="pictures.html"><strong>PICTURES</strong></a></li>
+          <li class="style19"><a href="videos.html"><strong>VIDEOS</strong></a></li>
+            <li class="style19"><a href="pictures.html"><strong>PICTURES</strong></a></li>
         </ul>
       </li>
-      <li><a href="#" class="drop style5 style1"><strong>QUALITY/HSE</strong></a>
+      <li><a href="#" class="drop style5 style1 style19"><strong>QUALITY/HSE</strong></a>
         <ul>
-          <li><a href="certifications.html"><strong>CERTIFICATIONS</strong></a></li>
+          <li class="style19"><a href="certifications.html"><strong>CERTIFICATIONS</strong></a></li>
         </ul>
       </li>
-      <li><a href="careers.html" class="style1 style4"><strong>CAREERS</strong></a></li>
-      <li><a href="contact.html" class="style1 style4"><strong>CONTACT</strong></a></li>
+      <li><a href="careers.html" class="style1 style4 style19"><strong>CAREERS</strong></a></li>
+      <li><a href="contact.html" class="style1 style4 style19"><strong>CONTACT</strong></a></li>
     </ul>
     <!-- ################################################################################################ -->
   </nav>
 </div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+    <!-- ################################################################################################ -->
+    <div class="container1">
+      <div class="feature">
+        <figure class="featured-item image-holder r-3-2 transition"></figure>
+      </div>
+      <div class="gallery-wrapper">
+        <div class="gallery">
+          <div class="item-wrapper">
+            <figure class="gallery-item image-holder r-3-2 active transition"></figure>
+          </div>
+          <div class="item-wrapper">
+            <figure class="gallery-item image-holder r-3-2 transition"></figure>
+          </div>
+          <div class="item-wrapper">
+            <figure class="gallery-item image-holder r-3-2 transition"></figure>
+          </div>
+          <div class="item-wrapper">
+            <figure class="gallery-item image-holder r-3-2 transition"></figure>
+          </div>
+          <div class="item-wrapper">
+            <figure class="gallery-item image-holder r-3-2"></figure>
+          </div>
+          <div class="item-wrapper">
+            <figure class="gallery-item image-holder r-3-2 transition"></figure>
+          </div>
+          <div class="item-wrapper">
+            <figure class="gallery-item image-holder r-3-2 transition"></figure>
+          </div>
+          <div class="item-wrapper">
+            <figure class="gallery-item image-holder r-3-2 transition"></figure>
+          </div>
+          <div class="item-wrapper">
+            <figure class="gallery-item image-holder r-3-2 transition"></figure>
+          </div>
+          <div class="item-wrapper">
+            <figure class="gallery-item image-holder r-3-2 transition"></figure>
+          </div>
+           
+           <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </div>
+      <div class="controls">
+        <button class="move-btn left style15 style16">&larr;</button>
+        <button class="move-btn right style15 style17">&rarr;</button>
+      </div>
+     
+    </div>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </section>
+</div>
+
 <p>
+  <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
 </p>
-<div class="wrapper bgded overlay" style="background-image:url(images/demo/build-cost-bg.png);">
-  <section id="breadcrumb" class="hoc clear">
-    <p><span class="heading style2 style1 style16">PICTURE GALLERY </span>
-      <!-- ################################################################################################ -->
-    </p>
-  </section>
-</div>
-<p>
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ --></p>
-<div class="wrapper row3">
-  <section class="hoc container clear">
-    <div class="swiper-container">
-<div class="swiper-wrapper">
-      <div class="swiper-slide" >
-	  <div class="imgBx"><img src="images/demo/NNPC.jpg">	  </div>
-      <div class="details">
-	  <h3 align="center"><a href="https://nnpcgroup.com/default.aspx">NNPC<br>
-	      <span class="style17">NIGERIA PETROLEUM CORPORATION</span></a></h3>
-	 </div>
-	  </div>
-	  
-	  <div class="swiper-slide" >
-	  <div class="imgBx">
-	  <a href="https://tcn.org.ng/" target="_blank"><img src="images/demo/TCN.jpg">
-	  </div>
-      <div class="details">
-	  <a href="https://tcn.org.ng/">TCN<br><span class="style17">TRANSMISSION COMPANY OF NIGERIA</span></a></h3>
-	 </div>
-	  </div>
-	  
-	   <div class="swiper-slide" >
-	  <div class="imgBx">
-	   <a href="https://www.dangote.com" target="_blank"><img src="images/demo/dangote.jpg">
-	  </div>
-      <div class="details">
-	  <a href="https://www.dangote.com">DANGOTE<br><span class="style17">DANGOTE GROUP</span></a></h3>
-	 </div>
-	  </div>
-	  
-	   <div class="swiper-slide" >
-	  <div class="imgBx">
-	    <a href="http://ndphc.net/" target="_blank"><img src="images/demo/ndphc.jpg" border="0"></a> </div>
-      <div class="details">
-	  <a href="http://ndphc.net/">NDPHC<br><span class="style17">NIGER DELTA POWER HOLDING</span></a></h3>
-	 </div>
-	  </div>
-	  
-	   <div class="swiper-slide" >
-	  <div class="imgBx">
-	   <a href="http://www.kplc.co.ke/" target="_blank"><img src="images/demo/KPLC-1.jpg">
-	  </div>
-      <div class="details">
-	  <a href="http://www.kplc.co.ke/">KPLC<br><span class="style17">KENYA POWER AND LIGHTING COMPANY</span></a></h3>
-	 </div>
-	  </div>
-	  
-	  
-	   <div class="swiper-slide" >
-	  <div class="imgBx">
-	  <a href="http://www.ceet.tg/" target="_blank"><img src="images/demo/ceet.jpg" width="170" height="235">	  </div>
-      <div class="details">
-	  <a href="http://www.ceet.tg/">CEET<br><span class="style17">COMPAGNIE ENERGI ELECTRIQUE DU TOGO</span></a></h3>
-	 </div>
-	  </div>
-	  
-	  
-	   <div class="swiper-slide" >
-	  <div class="imgBx">
-	  <a href="http://www.uetcl.com/" target="_blank"><img src="images/demo/UETCL.jpg">
-	  </div>
-      <div class="details">
-	  <a href="http://www.uetcl.com/">UETCL<br><span class="style17">UGANDA ELECTRICITY TRANSMISSION COMPANY LTD</span></a></h3>
-	 </div>
-	  </div>
-	  
-	  
-	   <div class="swiper-slide" >
-	  <div class="imgBx">
-	   <a href="http://www.rea.or.ug/" target="_blank"><img src="images/demo/REA.jpg">
-	  </div>
-      <div class="details">
-	  <a href="http://www.rea.or.ug/">REA<br><span class="style17">RURAL ELECTRIFICATION AGENCY</span></a></h3>
-	 </div>
-	  </div>
-	  
-	  
-    <p>&nbsp;</p>
-      <p>&nbsp;</p>
-  </div>
-    <p>
-      <!-- Add Pagination -->
-  </p>
-    <p>&nbsp;</p>
-    <p>&nbsp; </p>
-    <div class="swiper-pagination"></div>
-</div>
- 
-  </section>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
 <div class="wrapper row4 bgded overlay" style="">
   <footer id="footer" class="hoc clear">
     <!-- ################################################################################################ -->
     <div class="one_quarter first">
       <h6 align="justify" class="heading"><strong>CONTACT</strong></h6>
-      <p align="justify">ADDRESS: NO 8 AGUATA CLOSE, GARKI 2, FCT ABUJA  </p>
-      <p align="justify">PHONE NUMBER: 01234567890 </p>
-      <p align="justify">EMAIL:colencoco@</p>
-      <p align="justify">FAX: 0011223344556677 </p>
+      <p align="justify">ADDRESS: NO 8 AGUATA CLOSE, GARKI 2, FCT ABUJA </p>
+      <p align="justify">PHONE NUMBER: +2348039437969</p>
+      <p align="justify">EMAIL:info@colencoconsulting.com</p>
     </div>
     <div class="one_quarter">
       <h6 align="justify" class="heading"><strong>NAVIGATION</strong></h6>
@@ -375,30 +355,126 @@ body {
 <script src="layout/scripts/jquery.mobilemenu.js"></script>
 <script src="layout/scripts/jquery.flexslider-min.js"></script>
 
+<script>
+var gallery = document.querySelector('.gallery');
+var galleryItems = document.querySelectorAll('.gallery-item');
+var numOfItems = gallery.children.length;
+var itemWidth = 23; // percent: as set in css
 
- <!-- Swiper JS -->
-  <script type="text/javascript" src="swiper.min.js"></script>
+var featured = document.querySelector('.featured-item');
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 20,
-        stretch: 0,
-        depth: 100,
-        modifier: 7,
-        slideShadows : true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
-  </script>
+var leftBtn = document.querySelector('.move-btn.left');
+var rightBtn = document.querySelector('.move-btn.right');
+var leftInterval;
+var rightInterval;
 
+var scrollRate = 0.2;
+var left;
+
+function selectItem(e) {
+	if (e.target.classList.contains('active')) return;
+	
+	featured.style.backgroundImage = e.target.style.backgroundImage;
+	
+	for (var i = 0; i < galleryItems.length; i++) {
+		if (galleryItems[i].classList.contains('active'))
+			galleryItems[i].classList.remove('active');
+	}
+	
+	e.target.classList.add('active');
+}
+
+function galleryWrapLeft() {
+	var first = gallery.children[0];
+	gallery.removeChild(first);
+	gallery.style.left = -itemWidth + '%';
+	gallery.appendChild(first);
+	gallery.style.left = '0%';
+}
+
+function galleryWrapRight() {
+	var last = gallery.children[gallery.children.length - 1];
+	gallery.removeChild(last);
+	gallery.insertBefore(last, gallery.children[0]);
+	gallery.style.left = '-23%';
+}
+
+function moveLeft() {
+	left = left || 0;
+
+	leftInterval = setInterval(function() {
+		gallery.style.left = left + '%';
+
+		if (left > -itemWidth) {
+			left -= scrollRate;
+		} else {
+			left = 0;
+			galleryWrapLeft();
+		}
+	}, 1);
+}
+
+function moveRight() {
+	//Make sure there is element to the leftd
+	if (left > -itemWidth && left < 0) {
+		left = left  - itemWidth;
+		
+		var last = gallery.children[gallery.children.length - 1];
+		gallery.removeChild(last);
+		gallery.style.left = left + '%';
+		gallery.insertBefore(last, gallery.children[0]);	
+	}
+	
+	left = left || 0;
+
+	leftInterval = setInterval(function() {
+		gallery.style.left = left + '%';
+
+		if (left < 0) {
+			left += scrollRate;
+		} else {
+			left = -itemWidth;
+			galleryWrapRight();
+		}
+	}, 1);
+}
+
+function stopMovement() {
+	clearInterval(leftInterval);
+	clearInterval(rightInterval);
+}
+
+leftBtn.addEventListener('mouseenter', moveLeft);
+leftBtn.addEventListener('mouseleave', stopMovement);
+rightBtn.addEventListener('mouseenter', moveRight);
+rightBtn.addEventListener('mouseleave', stopMovement);
+
+
+//Start this baby up
+(function init() {
+	var images = [
+		'https://www07.abb.com/images/librariesprovider146/power-distribution/grid-integration.jpg?sfvrsn=1',
+		'https://www.tdworld.com/sites/tdworld.com/files/Distributed%20Bus%20Protection_770x440-1.jpg',
+		'https://www.securemeters.com/index.php/download_file/view_inline/1356/',
+		'https://ramboll.com/-/media/images/rgr/markets/energy/ghi/hydro-power-istock-1280x720.jpg?h=765&la=en&w=1360',
+		'https://commonwealthmagazine.org/wp-content/uploads/2016/05/bigstock-High-Voltage-Electricity-Trans-79132618-620x410.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/guy.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/landscape.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/lips.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/night.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/table.jpg'
+	];
+	
+	//Set Initial Featured Image
+	featured.style.backgroundImage = 'url(' + images[0] + ')';
+	
+	//Set Images for Gallery and Add Event Listeners
+	for (var i = 0; i < galleryItems.length; i++) {
+		galleryItems[i].style.backgroundImage = 'url(' + images[i] + ')';
+		galleryItems[i].addEventListener('click', selectItem);
+	}
+})();
+</script>
 
 </body>
 </html>

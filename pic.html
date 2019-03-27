@@ -61,7 +61,143 @@ Licence URI: http://www.os-templates.com/template-terms
     <style type="text/css">
 <!--
 .style17 {color: #000000}
+.container1 {	margin: 0 auto;
+	max-width: 700px;
+	max-height: 100vh;
+	background-color: white;
+}
+.container1 {margin: 0 auto;
+	max-width: 700px;
+	max-height: 100vh;
+	background-color: white;
+}
+.controls {	font-size: 0;
+	border-top: none;
+}
+.gallery {	position: relative;
+	white-space: nowrap;
+	font-size: 0;
+}
+.gallery-item {opacity: 0.5; }
+.gallery-wrapper {	position: relative;
+	overflow: hidden;
+}
+.image-holder {	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.item-wrapper {	cursor: pointer;
+	width: 23%; /* arbitrary value */
+	display: inline-block;
+	background-color: white;
+}
+.move-btn {	display: inline-block;
+	width: 50%;
+	border: none;
+  color: #ccc;
+	background-color: transparent;
+	padding: 0.2em 1.5em;
+}
+.r-3-2 {	width: 100%;
+	padding-bottom: 66.667%;
+	background-color: #ddd;
+}
+.transition {	transition: all 350ms ease-in-out;
+}
 -->
+
+
+
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	color: #707070;
+	background-color: #333;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 700px;
+	max-height: 100vh;
+	background-color: white;
+}
+
+
+/* Useful Classes */
+.xy-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.transition {
+	transition: all 350ms ease-in-out;
+}
+
+.r-3-2 {
+	width: 100%;
+	padding-bottom: 66.667%;
+	background-color: #ddd;
+}
+
+.image-holder {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/* Main Styles */
+.gallery-wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.gallery {
+	position: relative;
+	white-space: nowrap;
+	font-size: 0;
+}
+
+.item-wrapper {
+	cursor: pointer;
+	width: 23%; /* arbitrary value */
+	display: inline-block;
+	background-color: white;
+}
+
+.gallery-item { opacity: 0.5; }
+.gallery-item.active { opacity: 1; }
+
+.controls {
+	font-size: 0;
+	border-top: none;
+}
+.move-btn {
+	display: inline-block;
+	width: 50%;
+	border: none;
+  color: #ccc;
+	background-color: transparent;
+	padding: 0.2em 1.5em;
+}
+.move-btn:first-child {border-right: none;}
+.move-btn.left  { cursor: w-resize; }
+.move-btn.right { cursor: e-resize; }
+
+
+
+
     </style>
 </head>
 <body id="top">
@@ -157,6 +293,69 @@ Licence URI: http://www.os-templates.com/template-terms
     <div id="content-page" class="span12 content group">
       <div class="tabs-container">
         
+        <div class="wrapper row3">
+          <section class="hoc container clear">
+            <!-- ################################################################################################ -->
+            <div class="container1">
+              <div class="feature">
+                <figure class="featured-item image-holder r-3-2 transition"></figure>
+              </div>
+              <div class="gallery-wrapper">
+                <div class="gallery">
+                  <div class="item-wrapper">
+                    <figure class="gallery-item image-holder r-3-2 active transition"></figure>
+                  </div>
+                  <div class="item-wrapper">
+                    <figure class="gallery-item image-holder r-3-2 transition"></figure>
+                  </div>
+                  <div class="item-wrapper">
+                    <figure class="gallery-item image-holder r-3-2 transition"></figure>
+                  </div>
+                  <div class="item-wrapper">
+                    <figure class="gallery-item image-holder r-3-2 transition"></figure>
+                  </div>
+                  <div class="item-wrapper">
+                    <figure class="gallery-item image-holder r-3-2"></figure>
+                  </div>
+                  <div class="item-wrapper">
+                    <figure class="gallery-item image-holder r-3-2 transition"></figure>
+                  </div>
+                  <div class="item-wrapper">
+                    <figure class="gallery-item image-holder r-3-2 transition"></figure>
+                  </div>
+                  <div class="item-wrapper">
+                    <figure class="gallery-item image-holder r-3-2 transition"></figure>
+                  </div>
+                  <div class="item-wrapper">
+                    <figure class="gallery-item image-holder r-3-2 transition"></figure>
+                  </div>
+                  <div class="item-wrapper">
+                    <figure class="gallery-item image-holder r-3-2 transition"></figure>
+                  </div>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                </div>
+              </div>
+              <div class="controls">
+                <button class="move-btn left">&larr;</button>
+                <button class="move-btn right">&rarr;</button>
+              </div>
+            </div>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+          </section>
+        </div>
         <ul class="tabs">
             <li>
               <h4><a href="#tab1" title="Completed">T&amp;D-PMC </a></h4>
@@ -182,11 +381,11 @@ Licence URI: http://www.os-templates.com/template-terms
             <div id="tab1" class="panel group">
               <table cellspacing="0" cellpadding="0">
   <td colspan="5" height="20" width="788"><span class="style16"><strong>COMPLETED-PROJECT    MANAGEMENT AND SUPERVISION</strong></span></td>
-                </table>
+              </table>
                 <p>&nbsp;</p>
                 
                 <p>
-                    <div class="short-table white">
+              <div class="short-table white">
     <table width="97%" cellpadding="0" cellspacing="0" style="width: 100%">
         <thead>
         <tr>
@@ -307,11 +506,11 @@ Licence URI: http://www.os-templates.com/template-terms
   <td colspan="5" height="20" width="788"><table cellspacing="0" cellpadding="0">
     <td colspan="5" height="21" width="788"><span class="style16"><strong>TRANSMISSION &amp; DISTRIBUTION COMPLETED-FEASIBILITY STUDIES</strong></span></td>
   </table></td>
-                </table>
+              </table>
                 <p>&nbsp;</p>
                 
                 <p>
-                    <div class="short-table white">
+              <div class="short-table white">
     <table style="width: 100%" cellspacing="0" cellpadding="0">
         <thead>
         <tr>
@@ -406,7 +605,7 @@ Licence URI: http://www.os-templates.com/template-terms
     </table>
 </div>
                 </p>
-				</div>
+		  </div>
             
 			     <div id="tab3" class="panel group">
               <table cellspacing="0" cellpadding="0">
@@ -417,7 +616,7 @@ Licence URI: http://www.os-templates.com/template-terms
                 <p>&nbsp;</p>
                 
                 <p>
-                    <div class="short-table white">
+                   <div class="short-table white">
     <table style="width: 100%" cellspacing="0" cellpadding="0">
         <thead>
         <tr>
@@ -583,10 +782,10 @@ Licence URI: http://www.os-templates.com/template-terms
     </table>
 </div>
             </p>
-				</div>
-				</div>
+		  </div>
+		</div>
             
-        </div>
+      </div>
     </div>
     </p>
     <!-- ################################################################################################ -->
@@ -681,7 +880,125 @@ Licence URI: http://www.os-templates.com/template-terms
 <script type='text/javascript' src='js/shortcodes.js'></script>
 <script type='text/javascript' src='js/jquery/jquery.masonry.min.js'></script>
 <script type='text/javascript' src='js/jquery.custom.js'></script>
+<script>
+var gallery = document.querySelector('.gallery');
+var galleryItems = document.querySelectorAll('.gallery-item');
+var numOfItems = gallery.children.length;
+var itemWidth = 23; // percent: as set in css
 
+var featured = document.querySelector('.featured-item');
+
+var leftBtn = document.querySelector('.move-btn.left');
+var rightBtn = document.querySelector('.move-btn.right');
+var leftInterval;
+var rightInterval;
+
+var scrollRate = 0.2;
+var left;
+
+function selectItem(e) {
+	if (e.target.classList.contains('active')) return;
+	
+	featured.style.backgroundImage = e.target.style.backgroundImage;
+	
+	for (var i = 0; i < galleryItems.length; i++) {
+		if (galleryItems[i].classList.contains('active'))
+			galleryItems[i].classList.remove('active');
+	}
+	
+	e.target.classList.add('active');
+}
+
+function galleryWrapLeft() {
+	var first = gallery.children[0];
+	gallery.removeChild(first);
+	gallery.style.left = -itemWidth + '%';
+	gallery.appendChild(first);
+	gallery.style.left = '0%';
+}
+
+function galleryWrapRight() {
+	var last = gallery.children[gallery.children.length - 1];
+	gallery.removeChild(last);
+	gallery.insertBefore(last, gallery.children[0]);
+	gallery.style.left = '-23%';
+}
+
+function moveLeft() {
+	left = left || 0;
+
+	leftInterval = setInterval(function() {
+		gallery.style.left = left + '%';
+
+		if (left > -itemWidth) {
+			left -= scrollRate;
+		} else {
+			left = 0;
+			galleryWrapLeft();
+		}
+	}, 1);
+}
+
+function moveRight() {
+	//Make sure there is element to the leftd
+	if (left > -itemWidth && left < 0) {
+		left = left  - itemWidth;
+		
+		var last = gallery.children[gallery.children.length - 1];
+		gallery.removeChild(last);
+		gallery.style.left = left + '%';
+		gallery.insertBefore(last, gallery.children[0]);	
+	}
+	
+	left = left || 0;
+
+	leftInterval = setInterval(function() {
+		gallery.style.left = left + '%';
+
+		if (left < 0) {
+			left += scrollRate;
+		} else {
+			left = -itemWidth;
+			galleryWrapRight();
+		}
+	}, 1);
+}
+
+function stopMovement() {
+	clearInterval(leftInterval);
+	clearInterval(rightInterval);
+}
+
+leftBtn.addEventListener('mouseenter', moveLeft);
+leftBtn.addEventListener('mouseleave', stopMovement);
+rightBtn.addEventListener('mouseenter', moveRight);
+rightBtn.addEventListener('mouseleave', stopMovement);
+
+
+//Start this baby up
+(function init() {
+	var images = [
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/car.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/city.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/deer.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/flowers.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/food.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/guy.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/landscape.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/lips.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/night.jpg',
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/table.jpg'
+	];
+	
+	//Set Initial Featured Image
+	featured.style.backgroundImage = 'url(' + images[0] + ')';
+	
+	//Set Images for Gallery and Add Event Listeners
+	for (var i = 0; i < galleryItems.length; i++) {
+		galleryItems[i].style.backgroundImage = 'url(' + images[i] + ')';
+		galleryItems[i].addEventListener('click', selectItem);
+	}
+})(); </script>
 
 </body>
 </html>
